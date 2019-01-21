@@ -17,6 +17,8 @@ namespace App6
         Button addButton, removeButton;
 		StackLayout loggerLayout = new StackLayout();
 
+		public static List<Button> elements = new List<Button>();
+
 		public EditInventoryPage()
 		{
 			// Create the Button views and attach Clicked handlers.
@@ -36,6 +38,8 @@ namespace App6
 			removeButton.Clicked += OnButtonClicked;
 
 			Padding = new Thickness(5, Device.RuntimePlatform == Device.iOS ? 20 : 0, 5, 0);
+
+			
 
 			// Assemble the page.
 			Content = new StackLayout
@@ -68,12 +72,22 @@ namespace App6
 			if (button == addButton)
 			{
 				// Add Label to scrollable StackLayout.
-				loggerLayout.Children.Add(new Label
+				Button b;
+				b = new Button
 				{
 					Text = "Button clicked at " + DateTime.Now.ToString("T")
-				});
+				};
+
+
+				loggerLayout.Children.Add(b);
+
+				elements.Add(b);
+
+				
+
+
 			}
-			else
+			if(button == removeButton)
 			{
 				// Remove topmost Label from StackLayout
 				loggerLayout.Children.RemoveAt(0);

@@ -16,7 +16,7 @@ namespace App6
 			MainPage = new MainPage();
 			EditInventoryPage = new EditInventoryPage();
 
-			MainPage = new NavigationPage(new EditInventoryPage());
+			MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart()
