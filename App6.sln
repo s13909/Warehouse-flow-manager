@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse-flow-manager.Android", "App6\App6.Android\Warehouse-flow-manager.Android.csproj", "{5A37F872-34D2-4681-9A39-0133D71C539B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App6.Android", "App6\App6.Android\App6.Android.csproj", "{5A37F872-34D2-4681-9A39-0133D71C539B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse-flow-manager", "App6\App6\Warehouse-flow-manager.csproj", "{0244BCD8-7D7A-4362-9F2B-221762D58BEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App6", "App6\App6\App6.csproj", "{0244BCD8-7D7A-4362-9F2B-221762D58BEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

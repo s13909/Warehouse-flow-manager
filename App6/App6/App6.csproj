@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Page1.xaml">
+    <EmbeddedResource Update="AddItem.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
