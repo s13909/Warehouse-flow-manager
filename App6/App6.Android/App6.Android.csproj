@@ -93,9 +93,9 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\App6\Warehouse-flow-manager.csproj">
+    <ProjectReference Include="..\App6\App6.csproj">
       <Project>{0244BCD8-7D7A-4362-9F2B-221762D58BEB}</Project>
-      <Name>Warehouse-flow-manager</Name>
+      <Name>App6</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

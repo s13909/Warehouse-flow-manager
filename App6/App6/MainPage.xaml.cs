@@ -15,13 +15,13 @@ namespace App6
 		}
 		private void onClick(object sender, EventArgs e)
 		{
-			(sender as Button).Text = "I was just clicked!";
+			(sender as Button).Text = "Loading";
 			//Navigation.PushAsync(new EditInventoryPage());
 		}
 
 		private void onPress(object sender, EventArgs e)
 		{
-			(sender as Button).Text = "You pressed me!";
+			(sender as Button).Text = "Loading";
 			Navigation.PushAsync(new EditInventoryPage());
 		}
 	}

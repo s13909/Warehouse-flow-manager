@@ -11,10 +11,14 @@
            VerticalOptions="CenterAndExpand" />
         <Label Text="" />
         <Button Text="Load Inventory" 
-                x:Name="kurwa"
+                />
+        <Button Text="Edit Inventory" 
+                
+                x:Name="EditI"
                 Pressed="onPress"
-                Clicked="onClick"/>
-        <Button Text="Edit Inventory" />
+                Clicked="onClick"
+                
+                />
     </StackLayout>
 
 </ContentPage>

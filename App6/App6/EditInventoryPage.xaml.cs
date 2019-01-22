@@ -75,7 +75,7 @@ namespace App6
 				Button b;
 				b = new Button
 				{
-					Text = "Button clicked at " + DateTime.Now.ToString("T")
+					Text = "A new item added  at " + DateTime.Now.ToString("T")
 				};
 
 
@@ -83,7 +83,9 @@ namespace App6
 
 				elements.Add(b);
 
-				
+				Navigation.PushAsync(new AddItem());
+
+
 
 
 			}
@@ -91,6 +93,22 @@ namespace App6
 			{
 				// Remove topmost Label from StackLayout
 				loggerLayout.Children.RemoveAt(0);
+			}
+
+			if (elements.Contains(button))
+			{
+				int n = loggerLayout.Children.IndexOf(button);
+
+
+				Button b = (Button)loggerLayout.Children[n];
+
+				loggerLayout.Children.RemoveAt(n);
+
+				b.Text = "KUUUUURWAAAAA";
+
+				loggerLayout.Children.Add(b);
+
+
 			}
 
 			// Enable "Remove" button only if children are present.
