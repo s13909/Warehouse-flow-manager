@@ -76,7 +76,9 @@ namespace App6
 				b = new Button
 				{
 					Text = "A new item added  at " + DateTime.Now.ToString("T")
+					
 				};
+				b.Clicked += OnButtonClicked;
 
 
 				loggerLayout.Children.Add(b);
@@ -104,7 +106,7 @@ namespace App6
 
 				loggerLayout.Children.RemoveAt(n);
 
-				b.Text = "KUUUUURWAAAAA";
+				b.Text = "Działa";
 
 				loggerLayout.Children.Add(b);
 
